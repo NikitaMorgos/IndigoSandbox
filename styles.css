@@ -252,3 +252,16 @@ body {
   font-size: 0.8rem;
   color: var(--text-dim);
 }
+
+.footer-cta {
+  margin-top: 0.75rem !important;
+}
+
+.footer-cta a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.footer-cta a:hover {
+  text-decoration: underline;
+}
