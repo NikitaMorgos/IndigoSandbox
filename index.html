@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IndigoSandbox — кейсы AI-проектов</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <a href="/" class="logo">IndigoSandbox</a>
+      <p class="slogan">from night sketches to living AI-products</p>
+      <nav class="nav">
+        <a href="#cases">Кейсы</a>
+        <a href="#about">О проекте</a>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="hero">
+        <h1>Кейсы по реализации AI-проектов</h1>
+        <p class="hero-desc">Реальные истории: как идеи с набросков превращаются в работающие AI-продукты и что это даёт бизнесу.</p>
+      </section>
+
+      <section id="cases" class="cases">
+        <h2 class="section-title">Проекты</h2>
+
+        <article class="card" data-project="1">
+          <div class="card-header">
+            <span class="card-tag">Автоматизация</span>
+            <h3 class="card-title">Умная обработка заявок в поддержку</h3>
+          </div>
+          <div class="card-grid">
+            <div class="card-block">
+              <span class="block-label">1. Как было</span>
+              <p>Ручной разбор входящих писем, долгий ответ клиентам, дублирование типовых ответов.</p>
+            </div>
+            <div class="card-block">
+              <span class="block-label">2. Как стало</span>
+              <p>Классификация и маршрутизация заявок по категориям, черновики ответов по шаблонам, эскалация только сложных кейсов.</p>
+            </div>
+            <div class="card-block card-block-highlight">
+              <span class="block-label">3. Эффект</span>
+              <p>−40% времени на первичный ответ, экономия ~15 ч/нед на одного оператора.</p>
+            </div>
+            <div class="card-block">
+              <span class="block-label">4. Стек</span>
+              <p><code>Python</code> <code>OpenAI API</code> <code>FastAPI</code> <code>PostgreSQL</code> <code>Redis</code></p>
+            </div>
+            <div class="card-block">
+              <span class="block-label">5. В других отделах</span>
+              <p>HR (отбор резюме), продажи (квалификация лидов), юристы (первичный анализ договоров).</p>
+            </div>
+            <div class="card-block">
+              <span class="block-label">6. Кто обучился</span>
+              <p>Команда поддержки (5 чел.), тимлид поддержки, продукт-менеджер.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-project="2">
+          <div class="card-header">
+            <span class="card-tag">Аналитика</span>
+            <h3 class="card-title">Извлечение инсайтов из отчётов</h3>
+          </div>
+          <div class="card-grid">
+            <div class="card-block">
+              <span class="block-label">1. Как было</span>
+              <p>Ручной просмотр PDF/Excel, копирование данных в шаблоны, риск ошибок и задержек по срокам.</p>
+            </div>
+            <div class="card-block">
+              <span class="block-label">2. Как стало</span>
+              <p>Загрузка файлов в пайплайн, автоматическое извлечение метрик и вывод в дашборд + краткие выводы на естественном языке.</p>
+            </div>
+            <div class="card-block card-block-highlight">
+              <span class="block-label">3. Эффект</span>
+              <p>Сокращение времени на ежемесячный отчёт с 2 дней до 2 часов, меньше ручных правок.</p>
+            </div>
+            <div class="card-block">
+              <span class="block-label">4. Стек</span>
+              <p><code>LangChain</code> <code>Claude</code> <code>Streamlit</code> <code>S3</code></p>
+            </div>
+            <div class="card-block">
+              <span class="block-label">5. В других отделах</span>
+              <p>Финансы (аудит выгрузок), маркетинг (анализ кампаний), операционка (логи и инциденты).</p>
+            </div>
+            <div class="card-block">
+              <span class="block-label">6. Кто обучился</span>
+              <p>Аналитики (3 чел.), руководитель аналитики.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-project="3">
+          <div class="card-header">
+            <span class="card-tag">Документы</span>
+            <h3 class="card-title">RAG-поиск по внутренней базе знаний</h3>
+          </div>
+          <div class="card-grid">
+            <div class="card-block">
+              <span class="block-label">1. Как было</span>
+              <p>Поиск по папкам и ключевым словам, много времени на то, чтобы найти нужный регламент или кейс.</p>
+            </div>
+            <div class="card-block">
+              <span class="block-label">2. Как стало</span>
+              <p>Вопрос на естественном языке → релевантные фрагменты документов + краткий ответ с ссылками на источники.</p>
+            </div>
+            <div class="card-block card-block-highlight">
+              <span class="block-label">3. Эффект</span>
+              <p>Время поиска ответа снизилось с ~30 мин до 1–2 мин; меньше дублирования документов.</p>
+            </div>
+            <div class="card-block">
+              <span class="block-label">4. Стек</span>
+              <p><code>Chroma</code> <code>sentence-transformers</code> <code>OpenAI</code> <code>Next.js</code></p>
+            </div>
+            <div class="card-block">
+              <span class="block-label">5. В других отделах</span>
+              <p>Онбординг новых сотрудников, база решений по продукту, юридическая база.</p>
+            </div>
+            <div class="card-block">
+              <span class="block-label">6. Кто обучился</span>
+              <p>Все отделы (пилот — 12 человек), затем rollout на компанию.</p>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section id="about" class="about">
+        <h2 class="section-title">О IndigoSandbox</h2>
+        <p>Площадка для публикации кейсов по внедрению AI: от ночных скетчей до живых продуктов. Каждый кейс — структурированная история с «было / стало», эффектом, стеком и возможностью масштабирования на другие команды.</p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>IndigoSandbox — from night sketches to living AI-products</p>
+    </footer>
+  </div>
+</body>
+</html>
